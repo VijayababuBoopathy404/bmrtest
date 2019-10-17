@@ -22,6 +22,8 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
 
 public interface CustomerRepository extends ElasticsearchRepository<Customer, String> {
 
+/** Added comments to test */
+
 	public Customer findByFirstName(String firstName);
 
 	public List<Customer> findByLastName(String lastName);
